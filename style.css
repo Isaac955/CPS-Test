@@ -1,5 +1,5 @@
 body {
-    background-color: #f3f3f3;
+    background-color: #e1dcdc;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@ h1 {
 }
 
 .bouton-cps:hover {
-    background-color: rgb(22, 22, 22);
+    background-color: darkgray;
 }
 
 .compteur {
@@ -52,4 +52,21 @@ h1 {
     font-weight: bold;
     margin-top: 30px;
     color: black;
+}
+.bouton-recommencer {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.bouton-recommencer:hover {
+    background-color: darkgrey;
 }
