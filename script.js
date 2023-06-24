@@ -42,4 +42,21 @@ function finTest() {
 
     var elementCompteur = document.getElementById("compteur");
     elementCompteur.style.display = "none";
+
+    var boutonRecommencer = document.createElement("button");
+    boutonRecommencer.innerHTML = "Recommencer";
+    boutonRecommencer.className = "bouton-recommencer";
+    boutonRecommencer.addEventListener("click", recommencerTest);
+    document.querySelector(".container").appendChild(boutonRecommencer);
 }
+
+function recommencerTest() {
+    boutonClique = false;
+    clics = 0;
+    document.getElementById("resultat-cps").style.display = "none";
+    document.querySelector(".bouton-recommencer").remove();
+    document.getElementById("bouton-cps").style.display = "inline-block";
+    document.getElementById("compteur").style.display = "block";
+}
+
+document.getElementById("bouton-cps").style.cursor = "pointer";
