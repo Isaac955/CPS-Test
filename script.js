@@ -37,7 +37,7 @@ function finTest() {
     boutonCPS.style.display = "none";
 
     var elementResultatCPS = document.getElementById("resultat-cps");
-    elementResultatCPS.innerHTML = "Tes CPS (cliques par seconde) : " + cps;
+    elementResultatCPS.innerHTML = "Tes CPS : " + cps;
     elementResultatCPS.style.display = "block";
 
     var elementCompteur = document.getElementById("compteur");
