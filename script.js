@@ -35,29 +35,31 @@ function finTest() {
 
     var boutonCPS = document.getElementById("bouton-cps");
     boutonCPS.style.display = "none";
+    boutonCPS.style.animation = "slideInLeft 0.5s ease-in-out";
 
     var elementResultatCPS = document.getElementById("resultat-cps");
-    elementResultatCPS.innerHTML = "Tes CPS : " + cps;
+    elementResultatCPS.innerHTML = "Vos CPS : " + cps;
     elementResultatCPS.style.display = "block";
+    elementResultatCPS.style.animation = "slideInLeft 0.5s ease-in-out";
 
     var elementCompteur = document.getElementById("compteur");
     elementCompteur.style.display = "none";
+    elementCompteur.style.animation = "slideInLeft 0.5s ease-in-out";
 
-    var boutonRecommencer = document.createElement("button");
-    boutonRecommencer.innerHTML = "Recommencer";
-    boutonRecommencer.className = "bouton-recommencer";
-    boutonRecommencer.addEventListener("click", recommencerTest);
-    document.querySelector(".container").appendChild(boutonRecommencer);
+    var boutonRecommencer = document.getElementById("bouton-recommencer");
+    boutonRecommencer.style.display = "inline-block";
+    boutonRecommencer.style.animation = "slideInLeft 0.5s ease-in-out";
 }
 
 function recommencerTest() {
     boutonClique = false;
     clics = 0;
     document.getElementById("resultat-cps").style.display = "none";
-    document.querySelector(".bouton-recommencer").remove();
+    document.getElementById("resultat-cps").style.animation = "";
+    document.getElementById("bouton-recommencer").style.display = "none";
+    document.getElementById("bouton-recommencer").style.animation = "";
     document.getElementById("bouton-cps").style.display = "inline-block";
+    document.getElementById("bouton-cps").style.animation = "";
     document.getElementById("compteur").style.display = "block";
+    document.getElementById("compteur").style.animation = "";
 }
-
-document.getElementById("bouton-cps").style.cursor = "pointer";
-
